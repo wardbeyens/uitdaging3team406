@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+
+$font-family-sans-serif: 'Arimo', sans-serif;
+$font-family-alle-titels: 'Dancing Script', cursive;
+$grid-breakpoints: (
+        xs: 0,
+        sm: 600px,
+        md: 800px,
+        lg: 1000px,
+        xl: 1200px
+);
+
+$donkergroen: #002400;
+$middelgroen: #273B09;
+$lichtgroen: #7B904B;
+$lichtblauw: #598392;
+$donkerblauw: #124559;
+
+$accent: saturate(invert($donkergroen), 20%);
+
+$theme-colors: (
+        "donkergroen": $donkergroen,
+        "middelgroen": $middelgroen,
+        "lichtgroen": $lichtgroen,
+        "lichtblauw": $lichtblauw,
+        "donkerblauw": $donkerblauw,
+);
