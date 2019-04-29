@@ -27,6 +27,7 @@ $theme-colors: (
         "lichtgroen": $lichtgroen,
         "lichtblauw": $lichtblauw,
         "donkerblauw": $donkerblauw,
+        "mediumblauw": lighten($lichtblauw, 25%),
         "lichterblauw": lighten($lichtblauw, 48% )
 
 );
