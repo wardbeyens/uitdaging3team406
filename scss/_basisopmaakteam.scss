@@ -1,0 +1,50 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  padding-top: 56px;
+  background-color: $lichterblauw;
+  color: inherit;
+}
+
+section {
+  background-color: $lichterblauw;
+  color: inherit;
+}
+
+.container {
+  background-color: $lichterblauw;
+  color: inherit;
+}
+
+.btn, header, .header {
+  color: white;
+  background-color: $mediumblauw;
+}
+
+.btn-donkerblauw {
+  background-color: $donkerblauw;
+  color: white;
+}
+
+footer {
+  color: white;
+  background-color: $donkergroen;
+}
+
+nav {
+  color: white;
+  background-color: $donkerblauw;
+}
+
+.card-footer {
+  background-color: $lichtblauw;
+}
+
+.card-body {
+  background-color: lightgrey;
+}
+
+

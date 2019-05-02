@@ -12,26 +12,28 @@ $grid-breakpoints: (
         xl: 1200px
 );
 
-$donkergroen: #002400;
-$middelgroen: #273B09;
-$lichtgroen: #7B904B;
-$lichtblauw: #598392;
+$mediumgroen: #7B904B;
+$lichtergroen: lighten($mediumgroen, 48% );
+$lichtgroen: lighten($mediumgroen, 25% );
+$donkergroen: #273B09;
+
+$mediumblauw: #598392;
+$lichterblauw: lighten($mediumblauw, 48% );
+$lichtblauw: lighten($mediumblauw, 25%);
 $donkerblauw: #124559;
-$mediumblauw: lighten($lichtblauw, 25%);
-$lichterblauw: lighten($lichtblauw, 48% );
 
 $dikte: 3px;
 
-
-$accent: saturate(invert($donkergroen), 20%);
+$accent: #990829;
 
 $theme-colors: (
         "donkergroen": $donkergroen,
-        "middelgroen": $middelgroen,
+        "mediumgroen": $mediumgroen,
         "lichtgroen": $lichtgroen,
+        "lichtergroen": $lichtergroen,
         "lichtblauw": $lichtblauw,
         "donkerblauw": $donkerblauw,
         "mediumblauw": $mediumblauw,
-        "lichterblauw": $lichterblauw
-
+        "lichterblauw": $lichterblauw,
+        "accent": $accent
 );

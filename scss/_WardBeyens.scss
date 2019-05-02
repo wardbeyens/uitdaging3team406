@@ -1,18 +1,5 @@
-body {
-  @include kleurencombinatie(oranje, rood);
-}
-
-container {
-
-}
-
-section {
-
-}
-
-
 .boord {
-  border: 5px dashed $lichtblauw;
+  border: $dikte dashed $lichtblauw;
 }
 
 .contact {
@@ -21,12 +8,3 @@ section {
   color: inherit;
 }
 
-#carouselheader {
-  border-bottom: $dikte solid $lichterblauw;
-}
-
-.container {
-  background-color: $lichtgroen;
-  color: inherit;
-
-}
