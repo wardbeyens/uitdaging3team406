@@ -17,6 +17,10 @@ $middelgroen: #273B09;
 $lichtgroen: #7B904B;
 $lichtblauw: #598392;
 $donkerblauw: #124559;
+$mediumblauw: lighten($lichtblauw, 25%);
+$lichterblauw: lighten($lichtblauw, 48% );
+
+$dikte: 3px;
 
 
 $accent: saturate(invert($donkergroen), 20%);
@@ -27,7 +31,7 @@ $theme-colors: (
         "lichtgroen": $lichtgroen,
         "lichtblauw": $lichtblauw,
         "donkerblauw": $donkerblauw,
-        "mediumblauw": lighten($lichtblauw, 25%),
-        "lichterblauw": lighten($lichtblauw, 48% )
+        "mediumblauw": $mediumblauw,
+        "lichterblauw": $lichterblauw
 
 );
