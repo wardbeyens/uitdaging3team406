@@ -17,7 +17,7 @@ section {
 .container {
   background-color: $lichterblauw;
   color: inherit;
-  border: $dikte solid $mediumblauw;
+  border: $dikte solid $mediumgroen;
   margin-top: $dikte*3;
   margin-bottom: $dikte*3;
 }
@@ -65,7 +65,7 @@ ul {
 }
 
 .card-body {
-  background-color: lightgrey;
+  background-color: $lichtgroen;
 }
 
 
