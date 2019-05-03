@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0px;
   margin: 0px;
 }
@@ -10,16 +10,17 @@ body {
 }
 
 section {
-  background-color: $lichtblauw;
+  background-color: white;
   color: inherit;
+  margin: 0px;
+  padding: $dikte*3;
 }
 
 .container {
   background-color: $lichterblauw;
   color: inherit;
   border: $dikte solid $mediumgroen;
-  margin-top: $dikte*3;
-  margin-bottom: $dikte*3;
+  margin: 0 auto;
 }
 
 .btn, header, .header {
@@ -35,20 +36,55 @@ nav {
 footer {
   color: white;
   background-color: $donkergroen;
+
+  p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    background-color: inherit;
+  }
+
+  a, .a {
+    text-align: center;
+    text-decoration: none;
+    color: $lichtergroen;
+    background-color: inherit;
+    display: block;
+
+    &:hover {
+      text-decoration: underline;
+      color: $donkergroen;
+      background-color: $lichterblauw;
+    }
+  }
+
+  .naamfooter {
+    font-size: small;
+  }
 }
 
-
-p, .p{
+p, .p {
   color: darken($donkerblauw, 10%);
   font-size: $lettergrootte;
   line-height: $lettergrootte*1.5;
   text-align: justify;
+
+
 }
 
 
+a, .a {
+  text-decoration: none;
 
-a, .a{
-  text-transform: uppercase;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.volledig{
+  height: 100vh;
+  text-align: center;
 }
 
 ul {
