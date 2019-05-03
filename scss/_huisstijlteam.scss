@@ -22,7 +22,8 @@ $lichterblauw: lighten($mediumblauw, 48% );
 $lichtblauw: lighten($mediumblauw, 25%);
 $donkerblauw: #124559;
 
-$dikte: 3px;
+$dikte: 4px;
+$lettergrootte: $dikte*6;
 
 $accent: #990829;
 

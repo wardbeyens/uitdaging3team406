@@ -5,18 +5,21 @@
 
 body {
   padding-top: 56px;
-  background-color: $lichterblauw;
+  background-color: $lichtblauw;
   color: inherit;
 }
 
 section {
-  background-color: $lichterblauw;
+  background-color: $lichtblauw;
   color: inherit;
 }
 
 .container {
   background-color: $lichterblauw;
   color: inherit;
+  border: $dikte solid $mediumblauw;
+  margin-top: $dikte*3;
+  margin-bottom: $dikte*3;
 }
 
 .btn, header, .header {
@@ -24,9 +27,9 @@ section {
   background-color: $mediumblauw;
 }
 
-.btn-donkerblauw {
-  background-color: $donkerblauw;
+nav {
   color: white;
+  background-color: $donkerblauw;
 }
 
 footer {
@@ -34,9 +37,27 @@ footer {
   background-color: $donkergroen;
 }
 
-nav {
-  color: white;
+
+p, .p{
+  color: darken($donkerblauw, 10%);
+  font-size: $lettergrootte;
+  line-height: $lettergrootte*1.5;
+  text-align: justify;
+}
+
+
+
+a, .a{
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+.btn-donkerblauw {
   background-color: $donkerblauw;
+  color: white;
 }
 
 .card-footer {
