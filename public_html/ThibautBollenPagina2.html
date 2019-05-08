@@ -6,111 +6,178 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="De Kompassers">
-    <meta name="author" content="Ward Beyens, Thibaut Bolle, Gert Verhoeven">
+    <meta name="author" content="Ward Beyens, Thibaut Bollen, Gert Verhoeven">
 
     <title>De Kompassers</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- einde favicon -->
+
 
 </head>
 
 <body>
 
 <!-- Navigation -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">De kompassers</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Portfolio
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                        <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-                        <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-                        <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-                        <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-                        <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top bg-donkerblauw">
+
+    <a class="navbar-brand daysone" href="index.html">
+        <img src="images/kompassers.svg" alt="kompasserslogo" height="50">
+        De kompassers
+    </a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="GertVerhoevenPagina1.html">Geschiedenis</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="GertVerhoevenPagina2.html">Locaties</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ThibautBollenPagina1.html">Thibaut pagina 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ThibautBollenPagina2.html">Thibaut pagina 2</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="WardBeyensPagina1.html" id="navbarDropdownPortfolio"
+                   data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Hoe en Waar
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                    <a class="dropdown-item" href="WardBeyensPagina1.html#hoe">Hoe</a>
+                    <a class="dropdown-item" href="WardBeyensPagina1.html#benelux">Benelux</a>
+                    <a class="dropdown-item" href="WardBeyensPagina1.html#europa">Europa</a>
+                    <a class="dropdown-item" href="WardBeyensPagina1.html#wereldwijd">Wereldwijd</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="WardBeyensPagina2.html">Contact</a>
+            </li>
+        </ul>
     </div>
 </nav>
 
+<!-- Header -->
+<header id="carouselheader">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active lagefoto" style="background-image: url('images/indexfoto1.jpg')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4 text-white mt-5 mb-2 text-center">Benelux</h1>
+                </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item lagefoto" style="background-image: url('images/indexfoto2.jpg')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4 text-white mt-5 mb-2 text-center">Europa</h1>
+                </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item lagefoto" style="background-image: url('images/indexfoto3.jpg')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4 text-white mt-5 mb-2 text-center">Wereld</h1>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</header>
 <!-- Page Content -->
 <div class="container">
 
-    <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-5 mb-2 pt-3">Portfolio Item
-        <small>Subheading</small>
-    </h1>
-
-
-    <!-- Portfolio Item Row -->
     <div class="row">
-
-        <div class="col-md-8">
-            <img class="img-fluid" src="http://placehold.it/750x500" alt="">
+        <div class="col-md-8 mb-5">
+            <h2>What We Do</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
+            <a class="btn btn-donkerblauw btn-lg" href="#">Call to Action &raquo;</a>
         </div>
-
-        <div class="col-md-4">
-            <h3 class="my-3">Project Description</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-            <h3 class="my-3">Project Details</h3>
-            <ul>
-                <li>Lorem Ipsum</li>
-                <li>Dolor Sit Amet</li>
-                <li>Consectetur</li>
-                <li>Adipiscing Elit</li>
-            </ul>
+        <div class="col-md-4 mb-5">
+            <h2>Contact Us</h2>
+            <hr>
+            <address>
+                <strong>Start Bootstrap</strong>
+                <br>3481 Melrose Place
+                <br>Beverly Hills, CA 90210
+                <br>
+            </address>
+            <address>
+                <abbr title="Phone">P:</abbr>
+                (123) 456-7890
+                <br>
+                <abbr title="Email">E:</abbr>
+                <a href="mailto:#">name@example.com</a>
+            </address>
         </div>
-
     </div>
     <!-- /.row -->
 
-    <!-- Related Projects Row -->
-    <h3 class="my-4">Related Projects</h3>
-
     <div class="row">
-
-        <div class="col-md-3 col-sm-6 mb-4">
-            <a href="#">
-                <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-            </a>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-donkerblauw">Find Out More!</a>
+                </div>
+            </div>
         </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-            <a href="#">
-                <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-            </a>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-donkerblauw">Find Out More!</a>
+                </div>
+            </div>
         </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-            <a href="#">
-                <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-            </a>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-donkerblauw">Find Out More!</a>
+                </div>
+            </div>
         </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-            <a href="#">
-                <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-            </a>
-        </div>
-
     </div>
     <!-- /.row -->
 
@@ -118,16 +185,33 @@
 <!-- /.container -->
 
 <!-- Footer -->
-<footer class="py-5 bg-dark">
-    <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+<a class="weatherwidget-io" href="https://forecast7.com/en/51d324d94/turnhout/" data-label_1="TURNHOUT" data-label_2="WEATHER" data-theme="original" data-basecolor="#124559" >TURNHOUT WEATHER</a>
+<footer class="py-5 bg-donkerblauw">
+    <div class="row">
+        <p class="m-0 text-center text-white col-md-3">Copyright &copy; De Kompassers 2019</p>
+        <p class="m-0 text-center col-md-3">
+            <a href="https://www.thomasmore.be/" class="text-white">Thomas More</a>
+        </p>
+        <p class="m-0 text-center col-md-3">
+            <a href="http://wabyte.sinners.be/uitdaging2/index.html" class="text-white">Webbureau Decardento</a>
+        </p>
+        <div class="col-md-3">
+            <p class="m-0 text-center text-white ">auteurs:</p>
+            <p class="m-0 text-center"><a href="http://www.wabyte.sinners.be/" class="text-white naamfooter">Ward Beyens</a></p>
+            <p class="m-0 text-center"><a href="http://thibautb.sinners.be/" class="text-white naamfooter">Thibaut Bollen</a></p>
+            <p class="m-0 text-center "><a href="http://www.verhoevengert.sinners.be/" class="text-white naamfooter">Gert Verhoeven</a></p>
+        </div>
     </div>
+
     <!-- /.container -->
 </footer>
 
 <!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
 
 </body>
 

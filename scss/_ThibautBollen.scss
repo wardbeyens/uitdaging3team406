@@ -17,3 +17,11 @@
   line-height: 24px;
 }
 
+#accordion .ui-accordion-header {
+  background: $lichtblauw;
+}
+
+#accordion .ui-accordion-header.ui-state-active {
+  background: $donkerblauw;
+  color:$white;
+}
