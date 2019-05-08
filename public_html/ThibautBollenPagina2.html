@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="De Kompassers">
-    <meta name="author" content="Ward Beyens, Thibaut Bollen, Gert Verhoeven">
+    <meta name="author" content="Ward Beyens, Thibaut Bolle, Gert Verhoeven">
 
     <title>De Kompassers</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
@@ -73,6 +73,14 @@
 </nav>
 
 <!-- Header -->
+<header class="py-3 mb-3 bg-mediumblauw">
+    <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+            <h1 class="display-4 text-white mt-5 text-center">Soorten</h1>
+            <p class="lead text-white-50 text-center">Alle soorten geocaches die je je maar kan bedenken</p>
+        </div>
+    </div>
+</header>
 <header id="carouselheader">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -82,21 +90,21 @@
         </ol>
         <div class="carousel-inner" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active lagefoto" style="background-image: url('images/indexfoto1.jpg')">
+            <div class="carousel-item active" style="background-image: url('images/indexfoto1.jpg')">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1 class="display-4 text-white mt-5 mb-2 text-center">Benelux</h1>
+                    <h1 class="display-4 text-white mt-5 mb-2 text-center">Virtual Geocache</h1>
                 </div>
             </div>
             <!-- Slide Two - Set the background image for this slide in the line below -->
-            <div class="carousel-item lagefoto" style="background-image: url('images/indexfoto2.jpg')">
+            <div class="carousel-item " style="background-image: url('images/indexfoto2.jpg')">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1 class="display-4 text-white mt-5 mb-2 text-center">Europa</h1>
+                    <h1 class="display-4 text-white mt-5 mb-2 text-center">Earth Cache</h1>
                 </div>
             </div>
             <!-- Slide Three - Set the background image for this slide in the line below -->
-            <div class="carousel-item lagefoto" style="background-image: url('images/indexfoto3.jpg')">
+            <div class="carousel-item" style="background-image: url('images/indexfoto3.jpg')">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1 class="display-4 text-white mt-5 mb-2 text-center">Wereld</h1>
+                    <h1 class="display-4 text-white mt-5 mb-2 text-center">Traditionele Geocache</h1>
                 </div>
             </div>
         </div>
@@ -111,75 +119,33 @@
     </div>
 </header>
 <!-- Page Content -->
-<div class="container">
+<div>
 
-    <div class="row">
-        <div class="col-md-8 mb-5">
-            <h2>What We Do</h2>
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
-            <a class="btn btn-donkerblauw btn-lg" href="#">Call to Action &raquo;</a>
+    <div id="tabs" class="m-5 border-donkerblauw">
+        <ul>
+            <li><a href="#tabs-1">Traditionele Geocache</a></li>
+            <li><a href="#tabs-2">Mystery of Puzzle Caches</a></li>
+            <li><a href="#tabs-3">Multi-Cache</a></li>
+            <li><a href="#tabs-4">Earth Cache</a></li>
+            <li><a href="#tabs-5">Virtual Cache</a></li>
+        </ul>
+        <div id="tabs-1" class="m-3">
+            <p> Dit is het oorspronkelijke type van Geocaching en de meest eenvoudige ook. Deze Geocaches zullen zich bevinden op de gegeven coördinaten. De grootte kan variëren, maar al deze Geocaches zullen een logboek hebben. De grotere containers kunnen voorwerpen voor uitwisseling hebben en of trackables bevatten.</p>
         </div>
-        <div class="col-md-4 mb-5">
-            <h2>Contact Us</h2>
-            <hr>
-            <address>
-                <strong>Start Bootstrap</strong>
-                <br>3481 Melrose Place
-                <br>Beverly Hills, CA 90210
-                <br>
-            </address>
-            <address>
-                <abbr title="Phone">P:</abbr>
-                (123) 456-7890
-                <br>
-                <abbr title="Email">E:</abbr>
-                <a href="mailto:#">name@example.com</a>
-            </address>
+        <div id="tabs-2" class="m-3">
+            <p>De  "catch-all " van Geocache types, dit type kan leiden tot ingewikkelde puzzels die je eerst moet oplossen om de juiste coördinaten te bepalen. Mysterie/puzzel caches vaak uitgegroeid tot de staging-grond voor nieuwe en unieke Geocaches die niet passen in een andere categorie.</p>
+        </div>
+        <div id="tabs-3" class="m-3">
+            <p>Deze Geocaches hebben twee of meer locaties, waarbij de uiteindelijke locatie een fysieke container met een logboek erin is. Er zijn vele variaties, maar typisch zodra je bij de eerste fase bent, zal je een aanwijzing aan de verblijfplaats van het tweede deel ontvangen. De tweede heeft een aanwijzing voor de derde, en zo verder.</p>
+        </div>
+        <div id="tabs-4" class="m-3">
+            <p>Een EarthCache is een speciale geologische locatie die mensen kunnen bezoeken om te leren over een uniek kenmerk van de aarde. EarthCache pagina's bevatten een set van educatieve notities samen met coördinaten. Bezoekers van EarthCaches kunnen zien hoe onze planeet is gevormd door geologische processen, hoe we haar middelen moeten beheren en hoe wetenschappers onderzoek doen. Normaal gezien om je te mogen loggen in het logboek van een EarthCache moet je eerst vragen kunnen beantwoorden over de omgeving. </p>
+        </div>
+        <div id="tabs-5" class="m-3">
+            <p>
+                Een virtuele cache gaat over het ontdekken van een locatie in plaats van een container. De eisen voor het registreren van een virtuele cache variëren. Het kan nodig zijn om een vraag over de locatie te beantwoorden, een foto te maken, een taak te voltooien, etc... In elk geval, moet je de coördinaten bezoeken alvorens je het in je logboek mag posten. Omdat heel wat locaties heel interessant zijn, zou een Virtual Cache genoeg moeten zijn om je te verleiden om eens een bezoekje te nemen.</p>
         </div>
     </div>
-    <!-- /.row -->
-
-    <div class="row">
-        <div class="col-md-4 mb-5">
-            <div class="card h-100">
-                <img class="card-img-top" src="http://placehold.it/300x200" alt="">
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-donkerblauw">Find Out More!</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-5">
-            <div class="card h-100">
-                <img class="card-img-top" src="http://placehold.it/300x200" alt="">
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-donkerblauw">Find Out More!</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-5">
-            <div class="card h-100">
-                <img class="card-img-top" src="http://placehold.it/300x200" alt="">
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-donkerblauw">Find Out More!</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /.row -->
 
 </div>
 <!-- /.container -->
@@ -207,7 +173,23 @@
 </footer>
 
 <!-- Bootstrap core JavaScript -->
-<script src="js/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+    $( function() {
+        $( "#tabs" ).tabs({
+            event: "mouseover"
+        });
+    } );
+</script>
+
+
+
+<!--<script src="js/jquery.min.js"></script>-->
 <script src="js/bootstrap.bundle.min.js"></script>
 <script>
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');

@@ -6,6 +6,8 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+
 }
 
 .portfolio-item {
@@ -24,4 +26,16 @@
 #accordion .ui-accordion-header.ui-state-active {
   background: $donkerblauw;
   color:$white;
+}
+
+#tabs{
+  background: $lichterblauw;
+}
+
+.ui-tabs .ui-tabs-nav
+{
+  background: $donkerblauw;
+}
+.ui-tabs:active{
+  background: $lichtergroen;
 }
