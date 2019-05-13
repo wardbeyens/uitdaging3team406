@@ -41,3 +41,20 @@ sectie {
   background:white;
   overflow: hidden;
 }
+#PortfolioInfo {
+  background-color:#eee;
+  text-align:center;
+  padding:10px;
+  width:100%;
+  height:300px;
+  color:#333;
+  font-weight:bold;
+  border:3px solid #ccc;
+  position: center;
+  border-radius:5px;
+  margin-right:5px;
+}
+#PortfolioInfo>* {
+  display:none;
+}
+
