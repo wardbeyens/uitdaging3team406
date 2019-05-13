@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Days+One');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+$wit: #FFFFFF;
+
+@mixin basiskleuren($donkerblauw,$lichtblauw,$wit) {
+  background-color: $lichtblauw;
+  border: 3px solid $lichtblauw;
+  color: $wit;
+}
 .daysone {
   font-family: 'Days One', sans-serif;
 }
@@ -42,14 +49,12 @@ sectie {
   overflow: hidden;
 }
 #PortfolioInfo {
-  background-color:#eee;
+  @include basiskleuren($lichtblauw,$lichtblauw,$wit);
   text-align:center;
   padding:10px;
   width:100%;
   height:300px;
-  color:#333;
   font-weight:bold;
-  border:3px solid #ccc;
   position: center;
   border-radius:5px;
   margin-right:5px;
