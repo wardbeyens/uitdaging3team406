@@ -2,3 +2,10 @@
   background-color: $backgroundcolor;
   color: $color;
 }
+
+//Mixin gert
+@mixin basiskleuren($donkerblauw,$lichtblauw,$wit) {
+  background-color: $lichtblauw;
+  border: 3px solid $lichtblauw;
+  color: $wit;
+}

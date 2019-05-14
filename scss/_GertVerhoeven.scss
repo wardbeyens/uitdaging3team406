@@ -1,13 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Days+One');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 $wit: #FFFFFF;
-
-@mixin basiskleuren($donkerblauw,$lichtblauw,$wit) {
-  background-color: $lichtblauw;
-  border: 3px solid $lichtblauw;
-  color: $wit;
-}
 .daysone {
   font-family: 'Days One', sans-serif;
 }
@@ -15,13 +7,6 @@ $wit: #FFFFFF;
 .lagefoto {
   height: 100px;
 }
-
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-
-h1, h2, h3, h4 {
-  font-family: 'Days One', sans-serif;}
 
 .outer-div
 {
