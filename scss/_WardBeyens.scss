@@ -8,3 +8,38 @@
   color: inherit;
 }
 
+.lead {
+  font-size: 1.5rem;
+  font-weight: 300;
+  max-width: 50vw;
+  text-align: center;
+  margin: auto;
+  color: rgba(255, 255, 255, 0.8) !important;
+  background-color: inherit;
+
+}
+
+.stap {
+  text-align: left;
+  font-style: normal;
+  font-size: 18px !important;
+  line-height: 27px !important;
+
+  staptitel{
+    display: block;
+    background-color: white;
+    color: $mediumblauw;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  stap1, stap3 {
+    background-color: $lichtblauw;
+    color: $donkerblauw;
+  }
+
+  stap2, stap4 {
+    background-color: $lichtgroen;
+    color: $donkergroen;
+  }
+}
