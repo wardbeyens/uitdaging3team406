@@ -124,7 +124,8 @@
                     je eerst moet
                     oplossen om de juiste coördinaten te bepalen. Mysterie/puzzel caches vaak uitgegroeid tot de
                     staging-grond voor nieuwe en unieke Geocaches die niet passen in een andere categorie.</p>
-                <figure class="col-lg-5 m-4"><img class="rounded" src="images/mystery-of-puzzelcach.jpg" alt="banaan"></figure>
+                <figure class="col-lg-5 m-4"><img class="rounded" src="images/mystery-of-puzzelcach.jpg" alt="banaan">
+                </figure>
             </div>
         </div>
         <div id="tabs-3" class="m-3">
@@ -210,9 +211,11 @@
 
 <script>
     $(function () {
-        $("#tabs").tabs({
-            event: "mouseover"
-        });
+        if ($(window).width() > 739) {
+            $("#tabs").tabs({
+                event: "mouseover"
+            });
+        }
     });
 </script>
 
