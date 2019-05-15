@@ -47,9 +47,40 @@ sectie {
 #PortfolioInfo>* {
   display:none;
 }
-.pin {
-  height: 200px;
+.pinkompas {
+  position: relative;
+  left: -102px;
+  top: 1px;
 }
-.kompasrond {
+.cirkelkompas {
+  position: relative;
+  left: 102px;
+}
+@media (min-width:600px) {
+  #animations, #achtergrond {
+    display: block;
+  }
+  .pinkompas {
+    animation-name: draaien;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .cirkelkompas {
+    animation-name: draaienomgekeerd;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
 
+  @keyframes draaien {
+     to {
+       transform: rotate(360deg)
+     }
+   }
+  @keyframes draaienomgekeerd {
+    to {
+      transform: rotate(-180deg)
+    }
+  }
 }
