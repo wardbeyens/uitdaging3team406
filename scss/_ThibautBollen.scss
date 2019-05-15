@@ -50,8 +50,14 @@
   filter: alpha(opacity=83);
 
 }
+.draaiing{
+  transition:0.25s ease-out;
+}
 
-h1:hover{
-  transform:scale(1.5);
+.draaiing:hover{
+  transform:scale(1.2) skewX(-10deg);
+  transition: 0.25s ease-in;
+
+
 }
 
