@@ -75,3 +75,43 @@ $kleiner: 15px;
   background-size:80px 140px;
   background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
 }
+.carbonpatroon {
+  background: linear-gradient(135deg, $lichtblauw 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+  linear-gradient(225deg, $lichtblauw 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px) 0 64px;
+  background-color: $lichtblauw;
+  background-size: 64px 128px;
+}
+
+ul{
+  text-align: left;
+  font-size: 1.8*$kleiner;
+
+}
+li{
+  list-style: none;
+}
+
+@keyframes pijltje {
+
+  0%{
+    top: 0px;
+
+  }
+  75%{
+    top: 30px;
+    transform: scale(1.6);
+  }
+  100%{
+    top:0px;
+  }
+
+}
+
+.pijl{
+  position: relative;
+  animation-name: pijltje;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-duration: 3s;
+
+}
