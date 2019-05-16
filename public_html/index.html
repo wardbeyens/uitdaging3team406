@@ -77,25 +77,21 @@
     </div>
 </nav>
 
-<section class="bg-mediumblauw patroon">
-    <div class="volledig ">
+<section class="bg-mediumblauw patroon" id="welkomspagina">
+    <div class="begin ">
         <h1 class="font-gigantisch text-white m-5 p-5">welkom</h1>
-        <div class="text-white m-5">
-            <div class="p-5 m-5">
-                <div class="ml-5 pl-5">
-                    <div class="pl-5 ml-5">
-                        <ul class="m-5 pl-5">
-                            <li>Ben je wel een avonturier maar weet je niet wat doen?</li>
-                            <li>Houd je van de natuur?</li>
-                            <li>Kom dan zeker eens langs bij de kompassers!</li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                <ul class="text-white ">
+                    <li>Ben je wel een avonturier maar weet je niet wat doen?</li>
+                    <li>Houd je van de natuur?</li>
+                    <li>Kom dan zeker eens langs bij de kompassers!</li>
+                </ul>
             </div>
         </div>
-        <div class="mt-5 pt-5 d-none d-md-block pijl">
-            <a href="#p1"><i class="fas fa-angle-down fa-5x text-white"></i></a>
 
+        <div class="mt-5 pt-5 d-none d-md-block pijl" id="pijlbeneden">
+            <a href="#"><i class="fas fa-angle-down fa-5x text-white"></i></a>
         </div>
     </div>
 
@@ -310,9 +306,20 @@
 </footer>
 
 <!-- Bootstrap core JavaScript -->
+
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#pijlbeneden").click(function () {
 
+            $("#welkomspagina").slideUp(1500)
+
+        });
+
+
+    });
+</script>
 
 </body>
 

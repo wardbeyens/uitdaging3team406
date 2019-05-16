@@ -94,24 +94,31 @@ li{
 @keyframes pijltje {
 
   0%{
-    top: 0px;
+    top: 150px;
 
   }
   75%{
-    top: 30px;
+    top: 180px;
     transform: scale(1.6);
   }
   100%{
-    top:0px;
+    top:150px;
   }
 
 }
 
 .pijl{
+  top: 150px;
   position: relative;
   animation-name: pijltje;
   animation-iteration-count: infinite;
   animation-delay: 2s;
   animation-duration: 3s;
 
+}
+#begintekst{
+  width: 50%;
+  height: 50%;
+  left: 100%;
+  text-align: center;
 }
