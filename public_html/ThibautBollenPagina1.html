@@ -107,7 +107,7 @@
     <h3 class="m-4">Ben je er nog niet uit, bekijk dan zeker eens deze linkjes!</h3>
     <hr>
     <div id="accordion" class="m-3">
-        <h3> De grootste geocaching community</h3>
+        <h3 class="mt-3"> De grootste geocaching community</h3>
 
         <div>
             <p>
@@ -119,7 +119,7 @@
                 <a href="https://www.geocaching.com" class="btn btn-lg m-2 draaiing">Geocaching.com</a>
             </div>
         </div>
-        <h3>Tools voor geocaching</h3>
+        <h3 class="mt-3">Tools voor geocaching</h3>
         <div>
             <p>
                 Wil je raadsels van mysterie geocaches oplossen, woordwaardes berekenen en nog veel meer. Dan zal je
@@ -127,10 +127,11 @@
                 ook!
             </p>
             <div class="card-footer bg-white">
-                <a href="https://www.geocachingtoolbox.com/index.php?lang=nl" class="btn btn-lg m-2 effectoplink draaiing">Geocachingtoolbox.com</a>
+                <a href="https://www.geocachingtoolbox.com/index.php?lang=nl"
+                   class="btn btn-lg m-2 effectoplink draaiing">Geocachingtoolbox.com</a>
             </div>
         </div>
-        <h3>Gentsche Geokasjing Sosseteit</h3>
+        <h3 class="mt-3">Gentsche Geokasjing Sosseteit</h3>
         <div>
             <p>
                 In de streek van gent is er al reeds heel wat mooie natuur. Dat weet iedereen maar wist je ook dat hier
@@ -142,7 +143,7 @@
                 <a class="btn btn-lg draaiing" href="http://www.gentsche-geokasjing-sosseteit.be/wp/">Gentsche-geokasjing-sosseteit.be</a>
             </div>
         </div>
-        <h3>Geocachen in België</h3>
+        <h3 class="mt-3">Geocachen in België</h3>
         <div>
             <p>
                 Naast de grootste community voor geocachen is er ook een organisatie die gespecialiseerd in geocachen in
@@ -246,7 +247,9 @@
 
 <!-- Bootstrap core JavaScript -->
 <script>
-    $("#accordion").accordion();
+    if ($(window).width() > 739) {
+        $("#accordion").accordion()
+    };
 </script>
 
 <script src="js/jquery.min.js"></script>
