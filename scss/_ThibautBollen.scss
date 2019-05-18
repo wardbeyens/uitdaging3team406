@@ -6,10 +6,8 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-
 }
-$kleiner: 15px;
+
 .portfolio-item {
   margin-bottom: 30px;
 }
@@ -18,63 +16,64 @@ $kleiner: 15px;
   font-size: $kleiner;
   line-height: 1.33 * $kleiner;
 }
+
 .font-groot {
   font-size: 4.5*$kleiner;
   line-height: 5*1.33*$kleiner;
 }
+
 .font-gigantisch {
   font-size: 7 * $kleiner;
   line-height: 9 * $kleiner;
 }
+
 #accordion .ui-accordion-header {
   background: $lichtblauw;
 }
 
 #accordion .ui-accordion-header.ui-state-active {
   background: $donkerblauw;
-  color:$white;
+  color: $white;
 }
 
-#tabs{
+#tabs {
   background: $lichterblauw;
 }
 
-.ui-tabs .ui-tabs-nav
-{
+.ui-tabs .ui-tabs-nav {
   background: $donkerblauw;
 }
-.ui-tabs:active{
+
+.ui-tabs:active {
   background: $lichtergroen;
 }
-
 
 .opacity {
   opacity: 0.83;
   filter: alpha(opacity=83);
-
-}
-.draaiing{
-  transition:0.25s ease-out;
 }
 
-.draaiing:hover{
-  transform:scale(1.2) skewX(-10deg);
+.draaiing {
+  transition: 0.25s ease-out;
+}
+
+.draaiing:hover {
+  transform: scale(1.2) skewX(-10deg);
   transition: 0.25s ease-in;
-
-
 }
 
-.patroon{
-  background-color:$lichterblauw;
+.patroon {
+  background-color: $lichterblauw;
   background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
   linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
   linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
   linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
   linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a),
   linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
-  background-size:80px 140px;
+  background-size: 80px 140px;
   background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
 }
+
 .carbonpatroon {
   background: linear-gradient(135deg, $lichtblauw 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
   linear-gradient(225deg, $lichtblauw 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px) 0 64px;
@@ -82,41 +81,42 @@ $kleiner: 15px;
   background-size: 64px 128px;
 }
 
-ul{
+ul {
   text-align: left;
   font-size: 1.8*$kleiner;
-
 }
-li{
+
+li {
   list-style: none;
+  font-size: $lettergrootte;
+  line-height: $lettergrootte*1.5;
 }
 
 @keyframes pijltje {
 
-  0%{
+  0% {
     top: 120px;
 
   }
-  75%{
+  75% {
     top: 150px;
     transform: scale(1.6);
   }
-  100%{
-    top:120px;
+  100% {
+    top: 120px;
   }
-
 }
 
-.pijl{
+.pijl {
   top: 120px;
   position: relative;
   animation-name: pijltje;
   animation-iteration-count: infinite;
   animation-delay: 3s;
   animation-duration: 3s;
-
 }
-#begintekst{
+
+#begintekst {
   width: 50%;
   height: 50%;
   left: 100%;

@@ -16,7 +16,6 @@
   margin: auto;
   color: rgba(255, 255, 255, 0.8) !important;
   background-color: inherit;
-
 }
 
 .stap {
@@ -42,5 +41,10 @@
     background-color: $lichtgroen;
     color: $donkergroen;
   }
+}
+
+.card-type{
+  @include kleurencombinatie($donkerblauw, lighten($mediumblauw, 20%));
+  margin: 15px auto;
 }
 

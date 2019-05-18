@@ -66,28 +66,25 @@ p, .p {
   font-size: $lettergrootte;
   line-height: $lettergrootte*1.5;
   text-align: left;
-
-
 }
 
 
 a, .a {
   text-decoration: none;
 
-  &:hover{
+  &:hover {
     text-decoration: underline;
   }
 }
-.begin{
 
-    height: 100vh;
-    text-align: center;
-  }
+.begin {
 
+  height: 100vh;
+  text-align: center;
+}
 
-.volledig{
+.volledig {
   height: 100%;
-
   text-align: center;
 }
 
