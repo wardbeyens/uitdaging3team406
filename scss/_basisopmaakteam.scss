@@ -21,6 +21,8 @@ section {
 hr {
   margin: 0 20vw;
   border: 1px solid $accent;
+  box-shadow: 3px 3px 5px $accent;
+
 }
 
 .volledig {
@@ -31,6 +33,8 @@ hr {
   background-color: $lichterblauw;
   color: inherit;
   border: $dikte solid $donkerblauw;
+  box-shadow: 5px 5px 10px $donkerblauw;
+  margin-bottom: 15px;
 }
 
 .btn, header, .header {
@@ -84,6 +88,7 @@ p, .p {
 
 a, .a {
   text-decoration: none;
+  font-style: italic;
 
   &:hover {
     text-decoration: underline;
@@ -91,7 +96,6 @@ a, .a {
 }
 
 .begin {
-
   height: 100vh;
   text-align: center;
 }
@@ -103,6 +107,11 @@ ul {
 .btn-donkerblauw {
   background-color: $donkerblauw;
   color: white;
+}
+
+.card{
+  border: 2px solid $donkergroen;
+  box-shadow: 5px 5px 10px $lichtblauw;
 }
 
 .card-footer {
