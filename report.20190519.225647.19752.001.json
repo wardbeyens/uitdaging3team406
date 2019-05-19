@@ -1,0 +1,292 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20190519.225647.19752.001.json",
+    "dumpEventTime": "2019-05-19T22:56:47Z",
+    "processId": 19752,
+    "commandLine": [
+      "node",
+      "C:\\Users\\wardb\\OneDrive\\THOMAS MORE\\5. Webdesign met HTML 5\\TAKEN\\Uitdaging 3\\uitdaging3team406\\node_modules\\.bin\\\\..\\gulp\\bin\\gulp.js"
+    ],
+    "nodejsVersion": "v11.12.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "11.12.0",
+      "v8": "7.0.276.38-node.18",
+      "uv": "1.26.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "67",
+      "nghttp2": "1.34.0",
+      "napi": "4",
+      "llhttp": "1.1.1",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1b",
+      "cldr": "34.0",
+      "icu": "63.1",
+      "tz": "2018e",
+      "unicode": "11.0"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v11.12.0/node-v11.12.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v11.12.0/node-v11.12.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v11.12.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.17763",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "host": "DESKTOP-6QRAILJ"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff7dc52d35e",
+      "symbol": "SSL_SESSION_get0_peer+16478"
+    },
+    {
+      "pc": "0x00007ff7dc52c204",
+      "symbol": "SSL_SESSION_get0_peer+12036"
+    },
+    {
+      "pc": "0x00007ff7dc52ba1b",
+      "symbol": "SSL_SESSION_get0_peer+10011"
+    },
+    {
+      "pc": "0x00007ff7dc6193f2",
+      "symbol": "uv_loop_fork+88258"
+    },
+    {
+      "pc": "0x00007ff7dca3e72e",
+      "symbol": "v8::internal::FatalProcessOutOfMemory+798"
+    },
+    {
+      "pc": "0x00007ff7dca3e667",
+      "symbol": "v8::internal::FatalProcessOutOfMemory+599"
+    },
+    {
+      "pc": "0x00007ff7dcaf2144",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+14068"
+    },
+    {
+      "pc": "0x00007ff7dcae7f52",
+      "symbol": "v8::internal::Heap::CollectGarbage+7234"
+    },
+    {
+      "pc": "0x00007ff7dcae6768",
+      "symbol": "v8::internal::Heap::CollectGarbage+1112"
+    },
+    {
+      "pc": "0x00007ff7dcaf0097",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+5703"
+    },
+    {
+      "pc": "0x00007ff7dcaf0116",
+      "symbol": "v8::internal::Heap::RootIsImmortalImmovable+5830"
+    },
+    {
+      "pc": "0x00007ff7dcc27cdb",
+      "symbol": "v8::internal::Factory::AllocateRawWithImmortalMap+59"
+    },
+    {
+      "pc": "0x00007ff7dcc2a5cd",
+      "symbol": "v8::internal::Factory::NewRawOneByteString+77"
+    },
+    {
+      "pc": "0x00007ff7dca9eb61",
+      "symbol": "v8::internal::Smi::SmiPrint+337"
+    },
+    {
+      "pc": "0x00007ff7dca383c3",
+      "symbol": "v8::internal::JSTypedArray::element_size+5699"
+    },
+    {
+      "pc": "0x00007ff7dce518bd",
+      "symbol": "v8::internal::LocalEmbedderHeapTracer::SetEmbedderStackStateForNextFinalization+46429"
+    },
+    {
+      "pc": "0x0000038579a50481",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 1494265856,
+    "totalCommittedMemory": 1494265856,
+    "usedMemory": 1453776928,
+    "availableMemory": 35198856,
+    "memoryLimit": 1526909922,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 524288,
+        "committedMemory": 524288,
+        "capacity": 515584,
+        "used": 33520,
+        "available": 482064
+      },
+      "new_space": {
+        "memorySize": 4194304,
+        "committedMemory": 4194304,
+        "capacity": 2062336,
+        "used": 143064,
+        "available": 1919272
+      },
+      "old_space": {
+        "memorySize": 1421545472,
+        "committedMemory": 1421545472,
+        "capacity": 1388903536,
+        "used": 1388390176,
+        "available": 513360
+      },
+      "code_space": {
+        "memorySize": 2621440,
+        "committedMemory": 2621440,
+        "capacity": 2015616,
+        "used": 2015616,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 2109440,
+        "committedMemory": 2109440,
+        "capacity": 1292880,
+        "used": 1292880,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 63270912,
+        "committedMemory": 63270912,
+        "capacity": 94185832,
+        "used": 61901672,
+        "available": 32284160
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 275.203,
+    "kernelCpuSeconds": 249.218,
+    "cpuConsumptionPercent": 38.6456,
+    "maxRss": 3420217344,
+    "pageFaults": {
+      "IORequired": 1965186,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 3740,
+      "writes": 14
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\Users\\wardb\\OneDrive\\THOMAS MORE\\5. Webdesign met HTML 5\\TAKEN\\Uitdaging 3\\uitdaging3team406",
+    "INIT_CWD": "C:\\Users\\wardb\\OneDrive\\THOMAS MORE\\5. Webdesign met HTML 5\\TAKEN\\Uitdaging 3\\uitdaging3team406",
+    "PROMPT": "$P$G",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-6QRAILJ",
+    "TEMP": "C:\\Users\\wardb\\AppData\\Local\\Temp",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "COMPUTERNAME": "DESKTOP-6QRAILJ",
+    "ProgramData": "C:\\ProgramData",
+    "OneDrive": "C:\\Users\\wardb\\OneDrive",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "LOGONSERVER": "\\\\DESKTOP-6QRAILJ",
+    "USERDOMAIN": "DESKTOP-6QRAILJ",
+    "USERNAME": "wardb",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "SystemRoot": "C:\\WINDOWS",
+    "OS": "Windows_NT",
+    "USERPROFILE": "C:\\Users\\wardb",
+    "HOMEPATH": "\\Users\\wardb",
+    "LOCALAPPDATA": "C:\\Users\\wardb\\AppData\\Local",
+    "SystemDrive": "C:",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+    "PT7HOME": "C:\\Program Files\\Cisco Packet Tracer 7.2",
+    "__INTELLIJ_COMMAND_HISTFILE__": "C:\\Users\\wardb\\.PhpStorm2018.3\\config\\terminal\\history\\history-36",
+    "=::": "::\\",
+    "VBOX_MSI_INSTALL_PATH": "C:\\virtual machine\\",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "PUBLIC": "C:\\Users\\Public",
+    "NUMBER_OF_PROCESSORS": "6",
+    "PROCESSOR_LEVEL": "6",
+    "APPDATA": "C:\\Users\\wardb\\AppData\\Roaming",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "ProgramW6432": "C:\\Program Files",
+    "TERMINAL_EMULATOR": "JetBrains-JediTerm",
+    "SESSIONNAME": "Console",
+    "TMP": "C:\\Users\\wardb\\AppData\\Local\\Temp",
+    "OneDriveConsumer": "C:\\Users\\wardb\\OneDrive",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "HOMEDRIVE": "C:",
+    "windir": "C:\\WINDOWS",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "QT_DEVICE_PIXEL_RATIO": "auto",
+    "PROCESSOR_REVISION": "9e0a",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PATH": "C:\\Users\\wardb\\OneDrive\\THOMAS MORE\\5. Webdesign met HTML 5\\TAKEN\\Uitdaging 3\\uitdaging3team406\\node_modules\\.bin;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\iCLS\\;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\Git\\cmd;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\SysWOW64;C:\\Users\\wardb\\AppData\\Local\\Programs\\Python\\Python37-32\\Scripts\\;C:\\Users\\wardb\\AppData\\Local\\Programs\\Python\\Python37-32\\;C:\\Users\\wardb\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\desktop tools\\scanner\\Nmap;C:\\Users\\wardb\\AppData\\Roaming\\npm"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\winmmbase.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\bcryptprimitives.dll",
+    "\\\\?\\C:\\Users\\wardb\\OneDrive\\THOMAS MORE\\5. Webdesign met HTML 5\\TAKEN\\Uitdaging 3\\uitdaging3team406\\node_modules\\node-sass\\vendor",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll"
+  ]
+}

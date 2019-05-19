@@ -97,7 +97,8 @@ ul {
   font-size: 1.8*$kleiner;
 
   li {
-    list-style: none;
+    list-style-image: url(../images/kompassers.svg);
+    list-style-position: inside;
     font-size: $lettergrootte;
     line-height: $lettergrootte*1.5;
   }
