@@ -5,13 +5,26 @@
 
 body {
   padding-top: 56px;
-  background-color: $lichtblauw;
   color: inherit;
+  background-image: linear-gradient(to bottom, $mediumblauw, $lichtblauw, $lichterblauw, $lichtergroen, $lichtgroen, $mediumgroen);
+  background-repeat: no-repeat;
 }
 
 section {
   margin: 0px;
   padding: $dikte*3;
+  overflow: hidden;
+  margin: auto;
+  text-align: center;
+}
+
+hr {
+  margin: 0 20vw;
+  border: 1px solid $accent;
+}
+
+.volledig {
+  min-height: 75vh;
 }
 
 .container {
@@ -83,11 +96,6 @@ a, .a {
   text-align: center;
 }
 
-.volledig {
-  height: 100%;
-  text-align: center;
-}
-
 ul {
   list-style-position: inside;
 }
@@ -105,4 +113,14 @@ ul {
   background-color: $lichtergroen;
 }
 
+ul {
+  text-align: left;
+  font-size: 1.8*$kleiner;
+}
+
+li {
+  list-style: none;
+  font-size: $lettergrootte;
+  line-height: $lettergrootte*1.5;
+}
 

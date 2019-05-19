@@ -13,6 +13,13 @@ $grid-breakpoints: (
         xl: 1200px
 );
 
+$container-max-widths: (
+        sm: 580px,
+        md: 760px,
+        lg: 960px,
+        xl: 1160px
+) !default;
+
 $mediumgroen: #7B904B;
 $lichtergroen: lighten($mediumgroen, 48% );
 $lichtgroen: lighten($mediumgroen, 25% );

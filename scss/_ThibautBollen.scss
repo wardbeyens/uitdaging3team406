@@ -81,22 +81,10 @@
   background-size: 64px 128px;
 }
 
-ul {
-  text-align: left;
-  font-size: 1.8*$kleiner;
-}
-
-li {
-  list-style: none;
-  font-size: $lettergrootte;
-  line-height: $lettergrootte*1.5;
-}
-
 @keyframes pijltje {
 
   0% {
     top: 120px;
-
   }
   75% {
     top: 150px;

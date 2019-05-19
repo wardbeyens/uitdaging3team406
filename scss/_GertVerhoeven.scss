@@ -28,12 +28,6 @@ achtergrondg {
   padding: 0;
 }
 
-sectie {
-  height: 100vh;
-  background: white;
-  overflow: hidden;
-}
-
 #PortfolioInfo {
   @include basiskleuren($lichtblauw, $lichtblauw, $wit);
   text-align: center;
