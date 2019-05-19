@@ -19,10 +19,21 @@
   margin: 15px auto;
 }
 
+iframe {
+  min-height: 300px;
+}
+
 .kaart {
   max-width: 100%;
   vertical-align: middle;
   height: auto;
-  
 
+  border: 3px solid $donkerblauw;
+  display: inline-block;
+  transition: color 500ms linear, transform 1s ease-in 500ms;
+
+  &:hover {
+    border: 5px solid $accent;
+    transform: scale(1.5,1.5);
+  }
 }
