@@ -26,7 +26,9 @@ hr {
   @include kleurencombinatie($lichterblauw, color($donkerblauw));
   border: $dikte solid $donkerblauw;
   box-shadow: 5px 5px 10px $donkerblauw;
-  @include marginpadding($dikte*3, $dikte)
+
+  margin: $dikte*15 auto;
+  padding: $dikte*5;
 }
 
 .btn, header, .header {
