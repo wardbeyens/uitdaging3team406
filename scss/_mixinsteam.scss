@@ -12,3 +12,9 @@
 }
 
 //Mixin thibaut
+@mixin footerding($marge,$paddig) {
+  margin-left: $marge;
+  margin-top: 3*$marge;
+  padding: 2*$paddig;
+
+}

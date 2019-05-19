@@ -16,6 +16,10 @@
   font-size: $kleiner;
   line-height: 1.33 * $kleiner;
 }
+.font-medium{
+  font-size: 2*$kleiner;
+  line-height: 3*$kleiner;
+}
 
 .font-groot {
   font-size: 4.5*$kleiner;
@@ -109,4 +113,11 @@
   height: 50%;
   left: 100%;
   text-align: center;
+}
+
+
+
+
+.onder{
+  @include footerding(10px,20px)
 }
