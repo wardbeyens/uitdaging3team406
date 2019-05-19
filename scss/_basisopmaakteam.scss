@@ -1,50 +1,40 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  @include marginpadding(0, 0)
 }
 
 body {
   padding-top: 56px;
-  color: inherit;
   background-image: linear-gradient(to bottom, $mediumblauw, $lichtblauw, $lichterblauw, $lichtergroen, $lichtgroen, $mediumgroen);
   background-repeat: no-repeat;
 }
 
 section {
-  margin: 0px;
-  padding: $dikte*3;
+  @include marginpadding(0, $dikte*3);
   overflow: hidden;
   margin: auto;
   text-align: center;
 }
 
 hr {
-  margin: 0 20vw;
+  margin: 20px 20vw;
   border: 1px solid $accent;
   box-shadow: 3px 3px 5px $accent;
-
-}
-
-.volledig {
-  min-height: 75vh;
+  display: block;
 }
 
 .container {
-  background-color: $lichterblauw;
-  color: inherit;
+  @include kleurencombinatie($lichterblauw, color($donkerblauw));
   border: $dikte solid $donkerblauw;
   box-shadow: 5px 5px 10px $donkerblauw;
-  margin-bottom: 15px;
+  @include marginpadding($dikte*3, $dikte)
 }
 
 .btn, header, .header {
-  color: white;
-  background-color: $mediumblauw;
+  @include kleurencombinatie($mediumblauw, $wit);
 }
 
 nav {
-  color: white;
-  background-color: $donkerblauw;
+  @include kleurencombinatie($donkerblauw, $wit);
 }
 
 footer {
@@ -82,19 +72,31 @@ footer {
 }
 
 p, .p {
-  color: darken($donkerblauw, 10%);
+  @include kleurencombinatie(inherit, darken($donkerblauw, 10%));
   font-size: $lettergrootte;
   line-height: $lettergrootte*1.5;
   text-align: left;
 }
 
-
 a, .a {
   text-decoration: none;
   font-style: italic;
+  font-weight: 500;
 
   &:hover {
     text-decoration: underline;
+  }
+}
+
+ul {
+  list-style-position: inside;
+  text-align: left;
+  font-size: 1.8*$kleiner;
+
+  li {
+    list-style: none;
+    font-size: $lettergrootte;
+    line-height: $lettergrootte*1.5;
   }
 }
 
@@ -103,36 +105,23 @@ a, .a {
   text-align: center;
 }
 
-ul {
-  list-style-position: inside;
+.volledig {
+  min-height: 75vh;
 }
 
-.btn-donkerblauw {
-  background-color: $donkerblauw;
-  color: white;
-}
-
-.card{
+.card {
   border: 2px solid $donkergroen;
   box-shadow: 5px 5px 10px $lichtblauw;
 }
 
 .card-footer {
-  background-color: $lichtblauw;
+  @include kleurencombinatie($lichtblauw, inherit);
 }
 
 .card-body {
-  background-color: $lichtergroen;
+  @include kleurencombinatie($lichtergroen, inherit);
 }
 
-ul {
-  text-align: left;
-  font-size: 1.8*$kleiner;
+.btn-donkerblauw {
+  @include kleurencombinatie($donkerblauw, $wit);
 }
-
-li {
-  list-style: none;
-  font-size: $lettergrootte;
-  line-height: $lettergrootte*1.5;
-}
-

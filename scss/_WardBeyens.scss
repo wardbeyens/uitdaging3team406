@@ -1,8 +1,7 @@
 .knop {
   @include button-variant($donkerblauw, lighten($mediumblauw, 15%), $accent, darken($accent, 15%) , lighten($donkerblauw, 15%), darken($accent, 15%));
-  @include button-size($btn-padding-y, $btn-padding-x, $font-family-sans-serif, $btn-line-height, $btn-border-radius);
+  @include button-size($btn-padding-y*1.5, $btn-padding-x*1.5, $font-family-sans-serif, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
-
 }
 
 .lead {

@@ -1,7 +1,12 @@
 //Mixin Ward
-@mixin kleurencombinatie($backgroundcolor, $color){
+@mixin kleurencombinatie($backgroundcolor, $color) {
   background-color: $backgroundcolor;
   color: $color;
+}
+
+@mixin marginpadding($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
 }
 
 //Mixin gert
