@@ -34,6 +34,99 @@ iframe {
 
   &:hover {
     border: 5px solid $accent;
-    transform: scale(1.5,1.5);
+    transform: scale(1.5, 1.5);
   }
 }
+
+.container-breedte{
+  width: 800px ;
+}
+
+.vader {
+  position: relative;
+}
+
+@keyframes zoeken{
+  0%   {left: 270px; }
+  100%  {left: 170px; }
+}
+
+//struik links
+#zoon1 {
+  position: absolute;
+  top: 320px;
+  left: 270px;
+  z-index: 130;
+
+  animation-name: zoeken;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 4s;
+}
+
+@keyframes ward{
+  0%   {left: 335px; }
+  100%  {left: 435px; }
+}
+
+//struik rechts
+#zoon2 {
+  position: absolute;
+  top: 298px;
+  left: 335px;
+  z-index: 110;
+
+  animation-name: ward;
+  animation-delay: 1s;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes beyens{
+  0%   {left: 265px; }
+  100%  {left: 165px; }
+}
+
+//boom links
+#zoon3 {
+  position: absolute;
+  top: 200px;
+  left: 265px;
+  z-index: 110;
+
+  animation-name: beyens;
+  animation-delay: 2s;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes yolo{
+  0%   {left: 365px; }
+  100%  {left: 465px; }
+}
+
+//boom rechts
+#zoon4 {
+  position: absolute;
+  top: 230px;
+  left: 365px;
+  z-index: 120;
+
+  animation-name: yolo;
+  animation-delay: 3s;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#zoon5 {
+  position: absolute;
+  top: 335px;
+  left: 340px;
+  z-index: 100;
+}
+
+

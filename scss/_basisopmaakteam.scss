@@ -25,6 +25,7 @@ hr {
 .container {
   @include kleurencombinatie($lichterblauw, color($donkerblauw));
   border: $dikte solid $donkerblauw;
+  border-radius: 15px;
   box-shadow: 5px 5px 10px $donkerblauw;
 
   margin: $dikte*15 auto;
@@ -87,7 +88,9 @@ a, .a {
   font-weight: 500;
 
   &:hover {
-    text-decoration: underline;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
   }
 }
 
@@ -97,11 +100,15 @@ ul {
   font-size: 1.8*$kleiner;
 
   li {
-    list-style-image: url(../images/kompassers.svg);
-    list-style-position: inside;
+    list-style: none;
     font-size: $lettergrootte;
     line-height: $lettergrootte*1.5;
   }
+}
+
+.opsomming {
+  list-style-image: url(../images/kompasKlein.svg);
+  list-style-position: inside;
 }
 
 .begin {
@@ -114,8 +121,9 @@ ul {
 }
 
 .card {
-  border: 2px solid $donkergroen;
+  border: 3px solid $donkerblauw;
   box-shadow: 5px 5px 10px $lichtblauw;
+  border-radius: 10px;
 }
 
 .card-footer {
