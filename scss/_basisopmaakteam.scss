@@ -37,6 +37,7 @@ hr {
 
 nav {
   @include kleurencombinatie($donkerblauw, $wit);
+  max-width: 100vw;
 }
 
 footer {

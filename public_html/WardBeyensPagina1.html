@@ -50,20 +50,10 @@
                 <a class="nav-link" href="ThibautBollenPagina2.html">Alle soorten</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Hoe geocachen</a>
+                <a class="nav-link" href="WardBeyensPagina2.html">Hoe geocachen</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="WardBeyensPagina1.html" id="navbarDropdownPortfolio2"
-                   data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
-                    Kaarten
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio2">
-                    <a class="dropdown-item" href="WardBeyensPagina1.html#kaarten">Kaarten</a>
-                    <a class="dropdown-item" href="WardBeyensPagina1.html#weer">het weer</a>
-                    <a class="dropdown-item" href="WardBeyensPagina1.html#geocachekaart">geocache kaart</a>
-                    <a class="dropdown-item" href="WardBeyensPagina1.html#extra">extra</a>
-                </div>
+            <li class="nav-item">
+                <a class="nav-link" href="WardBeyensPagina1.html">Kaarten</a>
             </li>
         </ul>
     </div>
@@ -80,7 +70,7 @@
     </div>
 </header>
 
-<section class="bg-mediumblauw">
+<section>
     <div class="container mt-5 mb-5">
         <div id="weer">
             <div class="row">
@@ -93,9 +83,9 @@
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <a href="http://www.buienradar.be" target="_blank">
-                        <img border="0" src="http://api.buienradar.nl/image/1.0/radarmapbe?width=550">
-                    </a>
+                    <div class="d-block">
+                        <img class="kaart" src="http://api.buienradar.nl/image/1.0/radarmapbe?width=550">
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,7 +99,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <figure>
-                        <img src="./images/GeocacheKaart.jpg" alt="kaart met geocaches">
+                        <img src="./images/GeocacheKaart.jpg" alt="kaart met geocaches" class="kaart">
                         <figcaption>geocachekaart</figcaption>
                     </figure>
                 </div>
@@ -120,35 +110,31 @@
                 </div>
             </div>
         </div>
-        <hr>
 
+        <hr>
 
     </div>
 </section>
 
 
 <!-- Footer -->
-<a class="weatherwidget-io" href="https://forecast7.com/nl/51d164d99/geel/"
-   data-label_1="HET WEER IN"
-   data-label_2="GEEL" data-font="Arial" data-theme="original" data-basecolor="#124559">HET WEER IN GEEL</a>
-<footer class="py-5 bg-donkerblauw">
-    <div class="row">
-        <p class="m-0 text-center text-white col-md-3">Copyright &copy; De Kompassers 2019</p>
-        <p class="m-0 text-center col-md-3">
-            <a href="https://www.thomasmore.be/" class="text-white">Thomas More</a>
+<footer>
+    <a class="weatherwidget-io" data-basecolor="#273B09" data-font="Arial"
+       data-label_1="HET WEER IN" data-label_2="GEEL" data-theme="original"
+       href="https://forecast7.com/nl/51d164d99/geel/">HET
+        WEER IN GEEL</a>
+    <div class="row onder">
+        <p class="col-md-3">
+            <a href="https://www.thomasmore.be/"><i class="fas fa-school"></i> Thomas More</a>
         </p>
-        <p class="m-0 text-center col-md-3">
-            <a href="http://wabyte.sinners.be/uitdaging2/index.html" class="text-white">Webbureau Decardento</a>
+        <p class="col-md-3">
+            <a href="http://wabyte.sinners.be/uitdaging2/index.html"><i class="fas fa-globe"></i> Webbureau
+                Decardento</a>
         </p>
-        <div class="col-md-3">
-            <p class="m-0 text-center text-white ">auteurs:</p>
-            <p class="m-0 text-center"><a href="http://www.wabyte.sinners.be/" class="text-white naamfooter">Ward
-                Beyens</a></p>
-            <p class="m-0 text-center"><a href="http://thibautb.sinners.be/" class="text-white naamfooter">Thibaut
-                Bollen</a></p>
-            <p class="m-0 text-center "><a href="http://www.verhoevengert.sinners.be/"
-                                           class="text-white naamfooter">Gert
-                Verhoeven</a></p>
+        <div class="row ml-5">
+            <p><i class="fas fa-user-check"></i> auteur:</p>
+
+            <p><a href="http://www.wabyte.sinners.be/" class="naamfooter col-12 ml-3"> Ward Beyens</a></p>
         </div>
     </div>
 </footer>

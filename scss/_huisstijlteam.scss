@@ -21,12 +21,12 @@ $container-max-widths: (
 ) !default;
 
 $mediumgroen: #7B904B;
-$lichtergroen: lighten($mediumgroen, 48% );
-$lichtgroen: lighten($mediumgroen, 25% );
+$lichtergroen: lighten($mediumgroen, 48%);
+$lichtgroen: lighten($mediumgroen, 25%);
 $donkergroen: #273B09;
 
 $mediumblauw: #598392;
-$lichterblauw: lighten($mediumblauw, 48% );
+$lichterblauw: lighten($mediumblauw, 48%);
 $lichtblauw: lighten($mediumblauw, 25%);
 $donkerblauw: #124559;
 
@@ -53,6 +53,8 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Days One', sans-serif;}
+h1, h2, h3, h4, h5 {
+  font-family: 'Days One', sans-serif;
+  text-transform: capitalize;
+}
 
